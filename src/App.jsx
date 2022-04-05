@@ -4,7 +4,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div class="search">
-          <img src="./public/imgs/Search-Icon.svg" alt="search-icon" />
+          <img
+            src="sandbox-react/public/imgs/Search-Icon.svg"
+            alt="search-icon"
+          />
           <input type="text" placeholder="Rechercher" />
         </div>
       </header>
@@ -32,25 +35,25 @@ function App() {
         <div class="category">
           <div class="categories">
             <button class="categories-two-pink">
-              <img src="" alt="" />
+              <img src="./public/imgs/motion-design.svg" alt="" />
               <p class="name-category">Motion Design</p>
             </button>
           </div>
           <div class="categories">
             <button class="categories-two-reddish">
-              <img src="" alt="" />
+              <img src="./public/imgs/marketing.svg" alt="" />
               <p class="name-category">Marketing</p>
             </button>
           </div>
           <div class="categories">
             <button class="categories-two-reddish">
-              <img src="" alt="" />
+              <img src="./public/imgs/developpement.svg" alt="" />
               <p class="name-category">Développement</p>
             </button>
           </div>
           <div class="categories">
             <button class="categories-two-pink">
-              <img src="" alt="" />
+              <img src="./public/imgs/print.svg" alt="" />
               <p class="name-category">Print</p>
             </button>
           </div>
