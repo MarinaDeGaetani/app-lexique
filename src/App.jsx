@@ -4,6 +4,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div class="search">
+          <img src="./public/imgs/Search-Icon.svg" alt="search-icon" />
           <input type="text" placeholder="Rechercher" />
         </div>
       </header>

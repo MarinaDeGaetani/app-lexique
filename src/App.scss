@@ -119,3 +119,24 @@ p.name-category {
   margin-bottom: 10px;
   font-size: 18px;
 }
+
+footer {
+  background-color: var(--rosesaumon);
+  margin-top: 20px;
+  height: 81px;
+  min-width: 375px;
+}
+
+footer div.barre-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer button {
+  height: 31px;
+  width: 31px;
+  margin: 35px 10px 0px 0px;
+  //border: none;
+  background-color: var(--rosesaumon);
+}
