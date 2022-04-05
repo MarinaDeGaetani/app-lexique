@@ -1,15 +1,11 @@
 import "./App.scss";
+import { SearchInput } from "./components/SearchInput";
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div class="search">
-          <img
-            src="sandbox-react/public/imgs/Search-Icon.svg"
-            alt="search-icon"
-          />
-          <input type="text" placeholder="Rechercher" />
-        </div>
+        <SearchInput />
       </header>
       <main>
         <div className="more-search">
@@ -23,7 +19,9 @@ function App() {
             <button>Exporter</button>
             <button>Seo</button>
             <button>Fond perdu</button>
-            <button>Modélisation</button>
+            <button>
+              <span>Modélisation</span>
+            </button>
             <button>Repères</button>
             <button>mixage</button>
             <button>Responsive</button>
@@ -31,47 +29,75 @@ function App() {
             <button>Explainer</button>
           </div>
         </div>
-        <p class="titre-sep">Toutes catégories</p>
-        <div class="category">
-          <div class="categories">
-            <button class="categories-two-pink">
-              <img src="./public/imgs/motion-design.svg" alt="" />
-              <p class="name-category">Motion Design</p>
+        <p className="titre-sep">Toutes catégories</p>
+        <div className="category">
+          <div className="categories">
+            <button className="categories-two-pink">
+              <img
+                src="imgs/motion-design.svg"
+                alt="motion-design-icon"
+                className="img-categories"
+              />
+              <p className="name-category">Motion Design</p>
             </button>
           </div>
-          <div class="categories">
-            <button class="categories-two-reddish">
-              <img src="./public/imgs/marketing.svg" alt="" />
-              <p class="name-category">Marketing</p>
+          <div className="categories">
+            <button className="categories-two-reddish">
+              <img
+                src="imgs/marketing.svg"
+                alt="marketing-icon"
+                className="img-categories"
+              />
+              <p className="name-category">Marketing</p>
             </button>
           </div>
-          <div class="categories">
-            <button class="categories-two-reddish">
-              <img src="./public/imgs/developpement.svg" alt="" />
-              <p class="name-category">Développement</p>
+          <div className="categories">
+            <button className="categories-two-reddish">
+              <img
+                src="imgs/developpement.svg"
+                alt="developpement-icon"
+                className="img-categories"
+              />
+              <p className="name-category">Développement</p>
             </button>
           </div>
-          <div class="categories">
-            <button class="categories-two-pink">
-              <img src="./public/imgs/print.svg" alt="" />
-              <p class="name-category">Print</p>
+          <div className="categories">
+            <button className="categories-two-pink">
+              <img
+                src="imgs/print.svg"
+                alt="print-icon"
+                className="img-categories"
+              />
+              <p className="name-category">Print</p>
             </button>
           </div>
         </div>
       </main>
-      <footer>
-        <div class="barre-nav">
+      <nav>
+        <div className="barre-nav">
           <button>
-            <img src="" alt="" />
+            <img
+              src="imgs/search-icon-nav.svg"
+              alt="search-icon"
+              className="imgs-barre-nav"
+            />
           </button>
           <button>
-            <img src="" alt="" />
+            <img
+              src="imgs/home-icon-gras.svg"
+              alt="home-icon"
+              className="imgs-barre-nav"
+            />
           </button>
           <button>
-            <img src="" alt="" />
+            <img
+              src="imgs/abc-icon.svg"
+              alt="abc-icon"
+              className="imgs-barre-nav"
+            />
           </button>
         </div>
-      </footer>
+      </nav>
     </div>
   );
 }
