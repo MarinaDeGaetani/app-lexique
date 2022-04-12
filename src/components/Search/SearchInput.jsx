@@ -1,13 +1,19 @@
 import { useState } from "react";
+//import { useNavigate } from "react-router-dom";
 
 export const SearchInput = () => {
   const [word, setWord] = useState("");
 
-  // pour faire une requete vers APi et avoir tableau qui s'affiche
-  const [responses, setResponses] = useState([]);
+  //const navigate = useNavigate();
+
+  //
+  //const goToResult = (e) => {
+  //  navigate("/result", { state: { definition: "abcd" } });
+  //};
 
   const onChange = (event) => {
     setWord(event.target.value);
+    //Appel API
   };
 
   return (
@@ -23,6 +29,7 @@ export const SearchInput = () => {
         placeholder="Rechercher"
         value={word}
         onChange={onChange}
+        //onClick={goToResult}
       />
     </div>
   );
