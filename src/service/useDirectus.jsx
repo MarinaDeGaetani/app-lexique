@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const useDirectus = (setPropositions) => {
+export const useDirectus = ({ setPropositions }) => {
   const [word, setWord] = useState("");
 
   useEffect(() => {
@@ -8,6 +8,8 @@ export const useDirectus = (setPropositions) => {
   }, [word]);
 
   const getPropositions = async () => {
+    if (!setPropositions) return;
+
     if (!word.trim()) {
       setPropositions([]);
       return;
