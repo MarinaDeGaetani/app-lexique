@@ -1,26 +1,10 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDirectus } from "../../service/useDirectus";
 
 export const SearchInput = ({ setPropositions }) => {
-  const [word, setWord] = useState("");
-
-  useEffect(() => {
-    const getDefinition = async () => {
-      if (!word.trim()) return;
-
-      try {
-        const response = await fetch(
-          `https://sqhtg58u.directus.app/items/Definition?field=name,id&filter[name][_starts_with]=${word}`
-        );
-        const { data } = await response.json();
-        //console.log(data);
-        setPropositions(data);
-      } catch (error) {
-        console.error("SearchInput > getDefinition > error >", error);
-      }
-    };
-    getDefinition();
-  }, [word]);
+  //const [word, setWord] = useState("");
+  const { setWord, word } = useDirectus(setPropositions);
 
   const navigate = useNavigate();
 
