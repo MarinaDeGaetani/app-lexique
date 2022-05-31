@@ -2,22 +2,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
 
 body {
+  p.titre-definition-1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    color: #ff4057bf;
+    margin-left: 50px;
+  }
   div.definition-flex {
     background-image: url(../../public/imgs/vector-chat.svg);
+    width: auto;
     background-repeat: no-repeat;
+    background-size: fit-content;
     display: flex;
     margin: 30px 33px 30px 33px;
 
     div.flex {
-      div p.titre-definition {
+      p.titre-definition {
         font-family: "Libre Baskerville", serif;
         font-weight: normal;
         color: #ff4057bf;
+        margin: 51px 0px 0px 35px;
       }
       p.para-definition {
         font-family: "Roboto", sans-serif;
         font-weight: normal;
         color: #e0dbdb;
+        margin: 20px 20px 30px 20px;
       }
     }
   }
