@@ -1,4 +1,4 @@
-import { Navbar } from "./Search/Nav";
+import { Navbar } from "./Nav";
 
 export const Motdujour = () => {
   return (
