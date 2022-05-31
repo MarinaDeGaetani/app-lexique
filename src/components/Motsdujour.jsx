@@ -5,6 +5,7 @@ export const Motdujour = () => {
     <section className="fond-mot-du-jour">
       <img src="imgs/vector-chat.svg" alt="" />
       <div className="Motdujour">
+        <img src="imgs/vector-chat.svg" alt="" />
         <h1 className="titre-mdj">Mot du jour</h1>
         <h2 className="sous-titre-mdj">Fond Perdu</h2>
         <p className="anglais-mdj">En. Borderless printing, bleed area</p>

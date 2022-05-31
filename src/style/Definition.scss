@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
+
+body {
+  div.definition-flex {
+    background-image: url(../../public/imgs/vector-chat.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 30px 33px 30px 33px;
+
+    div.flex {
+      div p.titre-definition {
+        font-family: "Libre Baskerville", serif;
+        font-weight: normal;
+        color: #ff4057bf;
+      }
+      p.para-definition {
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        color: #e0dbdb;
+      }
+    }
+  }
+}
